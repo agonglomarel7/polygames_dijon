@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right,#FD7C11, #3888b6);
+    color: white;
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+img{
+    width: 150px;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.create-room-button {
+    background-color: #FFCA28;
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.create-room-button:hover {
+    background-color: #FFC107;
+}
+
+.instructions {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.instructions h2 {
+    margin-top: 0;
+}
+
+ol {
+    text-align: left;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.characters {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: -30px 20px;
+}
+
+.character-left, .character-right {
+    max-width: 500px;
+    height: 600px;
+}

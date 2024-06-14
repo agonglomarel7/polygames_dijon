@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polynames Game Interface</title>
+    <link rel="stylesheet" href="../game/css/game.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="players-info">
+                <img src="../images/Polytech_HORIZ_dijon.png" alt="">        
+
+                <div class="players">
+                </div>
+            </div>
+            <div class="room-info">
+                <button class="reset-button">Reset Game</button>
+                <button class="rules-button">Rules</button>
+            </div>
+        </div>
+        <div class="game-board">
+            <div class="team team-red">
+                <div class="team-header" id="left-red">
+                    <div class="team-info">
+                        <div class="title">Operative</div>
+                        <br>
+                        <div class="team-name">Fabiola</div>
+                    </div>
+                    <div class="score">9</div>
+                </div>
+            </div>
+            <div class="cards"></div>
+            <div class="team team-blue">
+                <div class="team-header " id="right-blue">
+                    <div class="team-info">
+                        <div class="title">Spymaster</div>
+                        <br>
+                        <div class="team-name">Houéfa</div>
+                    </div>
+                    <div class="score">8</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <input type="text" placeholder="TYPE YOUR CLUE HERE">
+            <button class="give-clue-button">Give Clue</button>
+            <div class="game-log">
+                <h3>Game log</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Popup for Rules -->
+    <div class="popup" id="rules-popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>Game Rules</h2>
+            <p>A chaque tour, le Maître des mots propose un indice formé d'un et un seul mot. Par ailleurs, il indique à son partenaire le
+                nombre de mots (N) auxquels son indice est susceptible de correspondre.
+                Le Maître des intuitions peut alors découvrir jusqu'à N+1 cartes. Les cartes sont découvertes un à une. Si le Maître des
+                intuitions tombe sur une carte grise, le tour est terminé et le Maître des mots doit donner un nouvel indice. Si le Maître des
+                intuitions découvre une carte noire, la partie est perdue
+            </p>
+            <p>Score</p>
+            <p> chaque tour, on comptabilise les points obtenus pour chaque carte bleue découverte. La première carte vaut 1 point, la
+                seconde 2 points, la troisième 3 points, ... Si le Maître des intuitions découvre une carte bleue en N+1, cette carte vaut N²
+                points.
+                Lorsqu'une carte grise est découverte, le tour s'arrête et les points obtenus sont ajoutés au score. Les cartes grises
+                n'apportent aucun point.
+                Si une carte noire est découverte, la partie est perdue et le score de l'équipe tombe à 0.
+                Exemple :
+                ▪ 1er tour : 2 mots à trouver, un carte bleue découverte : points pour le tour = 1
+                ▪ 2ème tour : 2 mots à trouver, trois cartes bleues découverte : points pour le tour = 1 + 2 + 9
+                A ce stade, l'équipe a remporté 13 points.</p>
+        </div>
+    </div>
+    <script src="../game/js/main.js" type="module"></script>
+</body>
+</html>

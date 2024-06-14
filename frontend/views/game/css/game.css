@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right,#FD7C11, #3888b6);
+    }
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+img{
+    width: 150px;
+}
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header .players-info, .header .room-info {
+    display: flex;
+    align-items: center;
+}
+
+.players-info .players, .players-info .timer, .room-info .room-name {
+    margin-right: 15px;
+}
+
+.reset-button, .rules-button, .give-clue-button {
+    background-color: #FFCA28;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-button:hover, .rules-button:hover, .give-clue-button:hover {
+    background-color: #FFC107;
+}
+
+.room-info{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.room-info .room-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.game-board {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.team {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+.team-header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+
+}
+
+.score{
+    font-size: 50px;
+}
+
+
+.team-name{
+    font-style: normal;
+    font-size: 25px;
+}
+
+.title{
+    font-style: oblique;
+    font-size: 30px;
+}
+
+.team-info {
+    margin-bottom: 10px;
+}
+
+#left-red{
+    background-color:  red;
+}
+#right-blue{
+    background-color:  blue;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 60%;
+}
+
+.card {
+    background: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card.red {
+    background-color: #F44336;
+}
+
+.card.blue {
+    background-color: #2196F3;
+}
+
+.card.neutral {
+    background-color: #E0E0E0;
+}
+
+.card.assassin {
+    background-color: #212121;
+    color: white;
+}
+
+.footer input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.game-log {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin-left: 10px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 2s ease;
+    height: 100px;
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+/* Popup container */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Popup content */
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Close button */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

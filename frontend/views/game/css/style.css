@@ -1,0 +1,38 @@
+:root {
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1f103d;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 2s ease;
+    height: 100px;
+    width: 150px;
+}
